@@ -1,5 +1,4 @@
-def generate_readme():
-    readme_content = """
+
 # Deepfake Video Detector
 
 This project demonstrates how to build and train a deepfake video detector using a pre-trained VGG16 model in TensorFlow/Keras.
