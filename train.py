@@ -9,14 +9,14 @@ from tensorflow.keras.models import Adam
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 
 def preprocess_frame(frame):
-    frame=cv2.resize(frame,(224,224))
+    frame=cv2.resize(frame,(224,224)) #frame is one particular frame
     frame=img_to_array(frame)
     frame= np.expand_dims(frame, axis=0)
     frame=frame/255.0
     return frame 
 
 def load_frames_from_dir(directory):
-    frames = []
+    frames = [] #array that stores the image
     for filename in os.listdir(directory):
         if filename.endswith(".jpg") or filename.endswith(".png"):
             frame = cv2.imread(os.path.join(directory, filename))
@@ -56,3 +56,5 @@ model.compile(optimizer=Adam(lr=0.0001), loss='binary_crossentropy', metrics=['a
 history = model.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_val, y_val))
 
 model.save('deepfake_detector_model.h5')
+
+#create a folder data, save authetic and deepfake video in respective folders, train the model to 10 epochs and then save .h5 file and then run model.py
