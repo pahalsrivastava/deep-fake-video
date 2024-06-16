@@ -3,10 +3,6 @@
 
 This project demonstrates how to build and train a deepfake video detector using a pre-trained VGG16 model in TensorFlow/Keras.
 
-## Overview
-
-Deepfake technology has become increasingly sophisticated, making it crucial to develop tools to detect manipulated videos. This project uses machine learning techniques to distinguish between authentic and deepfake videos based on frames extracted from the videos.
-
 ## Features
 
 - Trains a deepfake detector using a pre-trained VGG16 convolutional neural network.
