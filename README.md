@@ -12,12 +12,12 @@ Deepfake technology has become increasingly sophisticated, making it crucial to 
 
 - Trains a deepfake detector using a pre-trained VGG16 convolutional neural network.
 - Evaluates the trained model's accuracy on a test set of video frames.
-- Provides scripts for training (`train_deepfake_detector.py`) and evaluation (`evaluate_deepfake_detector.py`).
+- Provides scripts for training (`train.py`) and evaluation (`model.py`).
 
 ## Dependencies
 
-- Python 3.x
-- TensorFlow 2.x
+- Python
+- TensorFlow 
 - NumPy
 - OpenCV (cv2)
 - Scikit-learn
